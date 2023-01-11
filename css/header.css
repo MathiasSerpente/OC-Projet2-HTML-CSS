@@ -1,3 +1,10 @@
+header {  
+    max-width: 1300px;
+    margin: auto;
+    padding: 50px 50px 0 50px;
+    background-color: white;
+}
+
 header a {
     text-decoration: none;
     color: #000000;
@@ -22,13 +29,14 @@ header nav {
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
-
+    header {
+        padding: 50px 70px 0 70px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    #id-header-container {
-        padding: 0 50px !important;
-        width: 100%;
+    header {
+        padding: 20px 0;
     }
 
     header nav {
@@ -37,7 +45,7 @@ header nav {
         align-items: center;
         padding: 0;
         padding-top: 20px;
-        padding-bottom: 50px;
+        padding-bottom: 0px;
         width: 100%;
     }
 
