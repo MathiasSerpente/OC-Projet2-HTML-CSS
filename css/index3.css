@@ -1,0 +1,75 @@
+/* section class="activities" */
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 70px 0;
+}
+
+.activities-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.activity {
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 10%) 0px 4px 12px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.activity a {
+    display: flex;
+    justify-content: center;
+}
+
+.activity img {
+    object-fit: cover;
+    width: 295px;
+    height: 385px;
+}
+
+.activity figcaption {
+    font-size: 16px;
+    font-weight: 700;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .activity img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .activities {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .activities h2 {
+        width: 320px;
+    }
+
+    .activities-container {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        width: 320px;
+        gap: 25px;
+    }
+
+    .activity img {
+        width: 320px;
+        height: 140px;
+    }
+}

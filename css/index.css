@@ -16,13 +16,17 @@ form {
 }
 
 .search-label {
-    padding: 0 20px;
     height: 100%;
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+.search-label label {
+    padding: 20px;
 }
 
 .search-where {
@@ -39,8 +43,9 @@ form {
     font-size: 18px;
     font-weight: 700;
     padding-left: 10px;
-    height: 92%;
+    height: 91%;
     width: 95%;
+    font-family: 'Raleway', sans-serif;
 }
 
 .cta {
@@ -62,7 +67,7 @@ form {
 }
 
 .cta:hover,
-.search-label:hover,
+.search-label label:hover,
 .fa-solid.fa-location-dot:hover {
     cursor: pointer;
 }

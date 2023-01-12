@@ -51,6 +51,12 @@
     border: 5px solid white;
     background-color: white;
     overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 10%) 0px 4px 12px;
+}
+
+.hotel a {
+    display: flex;
+    justify-content: center;
 }
 
 .hotel img {
@@ -60,7 +66,7 @@
 }
 
 .hotel figcaption {
-    padding: 0 10px;
+    padding: 5px 10px 0 10px;
 }
 
 .hotel span {
@@ -91,7 +97,8 @@
         border-radius: 0;
         width: 100%;
         height: inherit;
-        padding: 30px 0;
+        padding: 0;
+        padding-top: 30px;
         align-items: center;
     }
 
@@ -157,6 +164,7 @@
     display: flex;
     width: 320px;
     height: 150px;
+    box-shadow: rgba(0, 0, 0, 10%) 0px 4px 12px;
 }
 
 .popular img {
@@ -190,7 +198,6 @@ strong {
     .populars {
         width: 100%;
         height: inherit;
-        margin-bottom: 50px;
     }
     
     .populars-container {
@@ -208,7 +215,7 @@ strong {
     }
 
     .popular strong {
-        font-size: 14px !important;
+        font-size: 14px;
     }
 
     .popular-price {
