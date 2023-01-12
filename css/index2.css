@@ -56,7 +56,10 @@
 
 .hotel a {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    text-decoration: none;
+    color: black;
 }
 
 .hotel img {
@@ -66,7 +69,7 @@
 }
 
 .hotel figcaption {
-    padding: 5px 10px 0 10px;
+    padding: 5px 10px;
 }
 
 .hotel span {
@@ -155,13 +158,15 @@
     gap: 15px;
 }
 
-.popular {
+.popular a {
+    display: flex;
+    text-decoration: none;
+    color: black;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 20px;
     border: 5px solid white;
     background-color: white;
-    display: flex;
     width: 320px;
     height: 150px;
     box-shadow: rgba(0, 0, 0, 10%) 0px 4px 12px;
@@ -174,10 +179,10 @@
 }
 
 .popular figcaption {
-    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 5px 10px;
 }
 
 strong {
@@ -202,11 +207,17 @@ strong {
     
     .populars-container {
         flex-direction: row;
-        width: 100%;
+    }
+
+    .popular {
+        flex: 1;
+    }
+
+    .popular a {
+        width: inherit;
     }
 
     .popular figcaption {
-        padding: 5px;
         overflow-y: scroll;
     }
 
@@ -225,7 +236,7 @@ strong {
 
 @media screen and (max-width: 768px) {
     .populars {
-        padding: 20px 0 0 0;
+        padding-top: 30px;
         width: 100%;
         border-radius: 0;
         align-items: center;

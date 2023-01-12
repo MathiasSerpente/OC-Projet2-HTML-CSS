@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 70px 0;
+    margin: 100px 0 70px 0;
 }
 
 .activities-container {
@@ -16,15 +16,17 @@
 }
 
 .activity {
-    display: flex;
-    flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 10%) 0px 4px 12px;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 10%) 0px 4px 12px;
     border-radius: 20px;
 }
 
 .activity a {
     display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    align-items: center;
     justify-content: center;
 }
 
@@ -39,9 +41,9 @@
     font-weight: 700;
     height: 60px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 20px;
+    align-self: flex-start;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -71,5 +73,9 @@
     .activity img {
         width: 320px;
         height: 140px;
+    }
+
+    .activity figcaption {
+        text-align: left;
     }
 }
