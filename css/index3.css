@@ -36,7 +36,7 @@
     height: 385px;
 }
 
-.activity figcaption {
+.activity-card-description {
     font-size: 16px;
     font-weight: 700;
     height: 60px;
@@ -75,7 +75,7 @@
         height: 140px;
     }
 
-    .activity figcaption {
+    .activity-card-description {
         text-align: left;
     }
 }

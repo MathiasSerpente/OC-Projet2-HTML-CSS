@@ -40,7 +40,7 @@
 .hotels-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 196px 196px;
+    grid-template-rows: 200px 200px;
     gap: 15px;
 }
 
@@ -68,7 +68,7 @@
     height: 120px;
 }
 
-.hotel figcaption {
+.hotel-card-description {
     padding: 5px 10px;
 }
 
@@ -178,7 +178,7 @@
     height: 150px;
 }
 
-.popular figcaption {
+.popular-card-description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -217,7 +217,7 @@ strong {
         width: inherit;
     }
 
-    .popular figcaption {
+    .popular-card-description {
         overflow-y: scroll;
     }
 
