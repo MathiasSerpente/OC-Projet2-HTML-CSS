@@ -8,6 +8,23 @@
     gap: 40px;
 }
 
+/* Media queries "élément par élément" pour la section "hotels-populars" : */
+
+@media screen and (max-width: 1040px) {
+    .hotels-populars {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .hotels-populars {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+}
+
+/* Media queries "3 tailles d'écrans" pour la section "hotels-populars" :
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .hotels-populars {
         flex-direction: column;
@@ -22,6 +39,7 @@
         gap: 0;
     }
 }
+*/
 
 /* Bloc "Hébergements" */
 
@@ -44,28 +62,33 @@
     gap: 15px;
 }
 
-.hotel {
+/* .hotel {
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 20px;
-    border: 5px solid white;
     background-color: white;
-    overflow-y: scroll;
     box-shadow: rgba(0, 0, 0, 10%) 0px 4px 12px;
-}
+} */
 
 .hotel a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
     text-decoration: none;
     color: black;
+    border-radius: 20px;
+    border: 5px solid white; 
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 10%) 0px 4px 12px;
 }
 
 .hotel img {
     object-fit: cover;
-    width: 240px;
+    width: 100%;
     height: 120px;
+    
 }
 
 .hotel-card-description {
@@ -86,6 +109,59 @@
     font-weight: 700;
     color: black;
 }
+
+/* Media queries "élément par élément" pour le bloc "Hébergements" : */
+
+@media screen and (max-width: 1270px) {
+    .hotels {
+        width: 100%;
+        height: 820px;
+    }
+    
+    .hotels-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .hotels-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+    }
+
+    .hotels {
+        width: 100%;
+        height: inherit;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .hotels-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .hotels {
+        border-radius: 0;
+        padding: 40px 20px;
+        background-color: white;
+    }
+    
+    .more {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    .hotels-container {
+        grid-template-columns: 1fr;
+    }
+}   
+
+/* Media queries "3 tailles d'écrans" pour le bloc "Hébergements" :
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .hotels {
@@ -127,6 +203,7 @@
         display: none;
     }
 }
+*/
 
 /* Bloc "Les plus populaires" */
 
@@ -174,7 +251,7 @@
 
 .popular img {
     object-fit: cover;
-    width: 120px;
+    width: 40%;
     height: 150px;
 }
 
@@ -183,6 +260,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 5px 10px;
+    width: 60%;
 }
 
 strong {
@@ -198,6 +276,68 @@ strong {
 .euro {
     font-weight: 600;
 }
+
+/* Media queries "élement par élément" pour le bloc "Les plus populaires" : */
+
+@media screen and (max-width: 1270px) {
+    .populars {
+        height: 820px;
+    }
+
+    .populars-container {
+        gap: 90px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .populars {
+        width: 100%;
+        height: inherit;
+        padding: 40px 20px;
+    }
+    
+    .populars-container {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .popular {
+        flex: 1;
+    }
+
+    .popular a {
+        width: inherit;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .populars {
+        height: inherit;
+        width: 100%;
+    }
+
+    .populars-container {
+        flex-direction: column;
+    }
+
+    .popular img {
+        object-fit: cover;
+        width: 40%;
+        height: 150px;
+    }
+
+    .popular-card-description {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .populars {
+        border-radius: 0;
+    }
+}
+
+/* Media queries "3 tailles d'écrans" pour le bloc "Les plus populaires" :
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .populars {
@@ -215,10 +355,6 @@ strong {
 
     .popular a {
         width: inherit;
-    }
-
-    .popular-card-description {
-        overflow-y: scroll;
     }
 
     .popular img {

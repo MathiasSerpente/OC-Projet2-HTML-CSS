@@ -81,6 +81,7 @@ form {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    gap: 30px;
 }
 
 .filters p {
@@ -91,6 +92,7 @@ form {
 .filters-eco-fam,
 .filters-rom-ani {
     display: flex;
+    gap: 30px;
 }
 
 .filters-eco-fam div,
@@ -103,7 +105,6 @@ form {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
-    margin-left: 30px;
     cursor: pointer;
 }
 
@@ -148,7 +149,88 @@ form {
     margin-right: 10px;
 }
 
-@media screen and (min-width:768px) and (max-width:992px) {
+/* Media queries "élément par élément" pour la section "title-search-filters" : */
+
+@media screen and (max-width: 768px) {
+    .title-search-filters {
+        margin: 0 20px;
+    }
+}
+
+    /* Formulaire :*/
+@media screen and (max-width: 490px) {
+    .cta {
+        width: 50px;
+    }
+    #button1 {
+        display: none;
+    }
+
+    #button2 {
+        display: flex;
+    }
+
+    .search-where {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    #where {
+        font-size: 14px;
+    }
+}
+
+    /* Filtres : */
+@media screen and (max-width: 992px) {
+    .filters {
+        gap: 10px;
+    }
+
+    .filters-eco-fam,
+    .filters-rom-ani {
+        gap: 10px;
+    }
+
+    .filters-eco-fam div,
+    .filters-rom-ani div {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .filters {
+        flex-wrap: wrap;
+    }
+
+    .filters p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .filters-eco-fam div,
+    .filters-rom-ani div {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .filters-eco-fam,
+    .filters-rom-ani {
+        width: 100%;
+    }
+
+    .filters-eco-fam div,
+    .filters-rom-ani div {
+        flex: 1;
+        justify-content: flex-start;
+    }
+}
+
+/* Media queries "3 tailles d'écrans" pour la section "title-search-filters" :
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .filters-eco-fam div,
     .filters-rom-ani div {
         padding: 0 10px;
@@ -177,7 +259,6 @@ form {
     }
 
     .filters {
-        justify-content: flex-end;
         align-items: flex-start;
         gap: 10px;
         flex-flow: column wrap;
@@ -210,3 +291,4 @@ form {
         margin-right: 5px;
     }
 }
+*/

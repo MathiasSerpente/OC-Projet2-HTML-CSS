@@ -27,7 +27,7 @@ header nav {
     align-items: center;
 }
 
-@media screen and (min-width:768px) and (max-width:992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     header {
         padding: 50px 70px 0 70px;
     }
