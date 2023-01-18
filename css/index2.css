@@ -62,14 +62,6 @@
     gap: 15px;
 }
 
-/* .hotel {
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 10%) 0px 4px 12px;
-} */
-
 .hotel a {
     display: flex;
     flex-direction: column;
